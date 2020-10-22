@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+   /*
+    box-sizing: border-box;
+   */ 
+}
+body{
+    background:linear-gradient(90deg, #667eea 0%,#764ba2 100% );
+}
+.center{
+    display: grid;
+    place-items: center;
+}
+.top-container{
+
+    background: #f0df24;
+    border: 10px white solid;
+    height: 200px;
+    padding: 10px;
+    width:200px;
+}
+.middle-container{
+
+    background: #f024b6;
+    border: 20px white solid;
+    height: 200px;
+    margin-left: 240px;
+    width:200px;
+}
+.bottom-container{
+
+    background: #24f09e;
+    height: 200px;
+    margin-left: 480px;
+    width:200px;
+}

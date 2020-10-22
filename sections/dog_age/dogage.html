@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="dogAge.js"></script>
+<style>
+    body{
+        padding-top: 12%;
+    }
+</style>
+<title>Dog Age</title>
+</head>
+<body>
+    <div class="text-center">
+        <h1>Convert dog age</h1>
+        <h1>🧑🏽 🔁 🐶</h1>
+    </div>
+    <div class="container mx-auto" style="width: 45%;">
+        <div class="row">
+            <div class="col-md-12 text-center mb-4">
+                <h2 class="mb-4">Whats your dog's age?</h2>
+                <input class="form-control mb-4" type="text" id="dogAge">
+                <input class="btn btn-outline-dark btn-lg btn-block mb-4" type="submit" value="Convert" id="convert">
+            </div>
+            <div class="col-md-12 mt-4">
+                <h3 class="innerhtml"></h3>
+            </div>
+        </div>
+    </div>
+<script>
+    document.getElementById("convert").addEventListener('click', function(){
+        let dogAge = document.getElementById("dogAge").value;
+        let dogAgeFormula = (dogAge - 2) * 4 + 21;
+        let innerhtml = document.querySelector('.innerhtml');
+        innerhtml.classList.add("alert");
+        innerhtml.classList.add("alert-primary");
+        
+        innerhtml.innerHTML = `<div style="padding-bottom: 30px;">Dog years: ${dogAge} 🐶 </div><div>Human years: ${dogAgeFormula} 💁🏿‍♂️</div>`;
+        
+    });
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+</body>
+</html>

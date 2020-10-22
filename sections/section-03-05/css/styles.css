@@ -1,0 +1,80 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}   
+a{
+    color: #006a71;
+}
+a:hover{
+    color: #ff7e67;
+}
+body{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+html{
+    background: #ecf4f3;
+}
+h1{
+    color:#006a71;
+}
+h3{
+    color: #0069718d;
+}
+hr{
+    border: none;
+    border-bottom-style: dotted;
+    border-width: 5px;
+    width: 4%; 
+    color: rgba(138, 138, 138, 0.523);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+li{
+    margin-left: 3%;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 70px;
+    margin-right: 10px;
+    
+}
+
+/**************Classes and IDs***************/
+.center{
+    text-align: center;
+    padding: 0 35%;
+}
+
+.submit{
+    margin-top: 15px;
+    background: #ff7e67;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+.submit:active{
+    background: #52bbc2;
+}
+#textarea{
+    background: #fffff6;
+    border: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#textarea:focus{
+    background: #fffff6;
+    box-shadow: 5px 5px 0px 1px #000000;
+    border-radius: 5px;
+    color: #006a71;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
